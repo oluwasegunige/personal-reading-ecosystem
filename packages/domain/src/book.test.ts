@@ -13,7 +13,11 @@ const validBook = {
 
 describe('Book', () => {
   it('creates an immutable, normalized record with required metadata', () => {
-    const result = createBook({ ...validBook, tagIds: [' science-fiction '], collectionIds: [' read-soon '] });
+    const result = createBook({
+      ...validBook,
+      tagIds: [' science-fiction '],
+      collectionIds: [' read-soon '],
+    });
 
     expect(result).toEqual({
       ok: true,

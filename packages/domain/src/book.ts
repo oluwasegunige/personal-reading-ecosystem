@@ -109,7 +109,10 @@ const validate = (input: CreateBookInput): BookValidationError[] => {
   if (!Number.isSafeInteger(input.fileSizeBytes) || input.fileSizeBytes < 0) {
     errors.push('file-size-invalid');
   }
-  if (input.pageCount !== undefined && (!Number.isSafeInteger(input.pageCount) || input.pageCount <= 0)) {
+  if (
+    input.pageCount !== undefined &&
+    (!Number.isSafeInteger(input.pageCount) || input.pageCount <= 0)
+  ) {
     errors.push('page-count-invalid');
   }
   if (!isIsoDateTime(input.addedAt)) errors.push('added-at-invalid');
@@ -139,4 +142,5 @@ const trimOptional = (value: string | undefined): string | undefined => {
   return trimmed === '' ? undefined : trimmed;
 };
 
-const freezeIds = <T extends string>(ids: readonly T[]): readonly T[] => Object.freeze(ids.map((id) => id.trim() as T));
+const freezeIds = <T extends string>(ids: readonly T[]): readonly T[] =>
+  Object.freeze(ids.map((id) => id.trim() as T));
