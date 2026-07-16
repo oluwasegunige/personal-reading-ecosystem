@@ -1,16 +1,8 @@
+import type { BookId } from './book.js';
+
 /** Framework-free shared language for every application in the ecosystem. */
-export type BookId = string;
 export type DeviceId = string;
 export type UserId = string;
-
-export interface Book {
-  readonly id: BookId;
-  readonly title: string;
-  readonly authorIds: readonly string[];
-  readonly format: BookFormat;
-}
-
-export type BookFormat = 'pdf' | 'epub';
 
 export interface ReaderState {
   readonly bookId: BookId;
