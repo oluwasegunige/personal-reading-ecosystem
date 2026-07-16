@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Personal Reading Ecosystem",
+    "slug": "personal-reading-ecosystem",
+    "scheme": "reading",
+    "userInterfaceStyle": "automatic"
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --surface-cream: #f9f8f6;
+  --surface-charcoal: #121415;
+  --surface-container-low: #f3f4f1;
+  --brand-forest: #2d5a47;
+  --ink-primary: #1a1c1d;
+  --ink-secondary: #5c6166;
+  --border-subtle: #e2e4e6;
+  --font-ui: Geist, ui-sans-serif, system-ui, sans-serif;
+  --font-reader: 'Playfair Display', Georgia, serif;
+  --sidebar-width: 260px;
+  --content-max-width: 1440px;
+  --gutter: 24px;
+  --stack-sm: 8px;
+  --stack-md: 16px;
+  --stack-lg: 32px;
+  --radius-sm: 2px;
+  --radius-default: 4px;
+  --radius-lg: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-cream: var(--surface-charcoal);
+    --ink-primary: #f0f1ee;
+    --ink-secondary: #c0c8c2;
+    --border-subtle: #414944;
+  }
+}
