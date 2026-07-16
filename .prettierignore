@@ -1,0 +1,11 @@
+node_modules
+dist
+coverage
+.turbo
+.expo
+apps/**/dist-electron
+docs/*.md
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
